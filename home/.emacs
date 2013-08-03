@@ -1,4 +1,5 @@
 (package-initialize)
+;; Org mode stuff
 (require 'org-install)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (define-key global-map "\C-cl" 'org-store-link)
@@ -14,5 +15,6 @@
 			     "~/org/mh.org"
 			     "~/org/personal.org"))
 ;; cycle through buffers with Ctrl-Tab (like Firefox)
-(global-set-key (kbd "C-0") 'bury-buffer)
+(global-set-key (kbd "C-]") 'next-buffer)
+(global-set-key (kbd "C-[") 'previous-buffer)
 (load "~/packages/ESS/lisp/ess-site")
