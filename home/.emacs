@@ -18,3 +18,5 @@
 (global-set-key (kbd "C-]") 'next-buffer)
 (global-set-key (kbd "C-[") 'previous-buffer)
 (load "~/packages/ESS/lisp/ess-site")
+
+(kill-buffer "*scratch*")
